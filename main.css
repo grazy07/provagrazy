@@ -59,7 +59,7 @@ body {
 
 
 .formLogin input:focus {
-    border: 1px solid #6c85bd;
+    border: 1px solid #003885;
 }
 
 .formLogin label {
@@ -76,11 +76,11 @@ body {
 }
 
 .formLogin a:hover {
-    color: #6c85bd;
+    color: #003885;
 }
 
 .btn {
-    background-color: #6c85bd;
+    background-color: #003885;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
@@ -93,6 +93,6 @@ body {
 
 .btn:hover {
     transform: scale(1.05);
-    background-color: #6c85bd;
+    background-color: #003885;
 
 }
