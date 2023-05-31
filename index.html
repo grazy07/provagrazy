@@ -1,41 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt=br">
 <head>
+    <link rel = "stylesheet" href="estilo.css"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="page">
-        <form method="POST" class="formLogin">
-            <h1>Login</h1>
-            <p>Digite os seus dados de acesso no campo abaixo.</p>
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
-            <label for="password">Senha</label>
-            <input type="password" placeholder="Digite seu e-mail" />
-            <a href="/">Esqueci minha senha</a>
-            <input type="submit" value="Acessar" class="btn" />
+    <div>
+        <h1> login</h1>
+        <form>
+            <input type="text" placeholder="seu email" id="e-mail">
+            <br><br>
+            <input type="password" placeholder="sua senha" id="senha">
+            <br><br>
+            <input type="submit" onclick="logar(); return false">
+            <br><br>
         </form>
     </div>
-
     <script>
         function logar(){
             var login = document.getElementById('e-mail').value;
             var senha = document.getElementById('senha').value;
+            if(login == "grazy05@gmail.com" && senha == "provagit"){
+                alert('logado com sucesso')
+                location.href = "inicio.html";
 
-            if(login == "grazy" && senha == "nada"){
-                alert('logado com sucesso');
-                location.href = "segunda.html"
             }
-
             else{
                 alert('erro ao logar');
             }
         }
     </script>
-    
 </body>
 </html>
